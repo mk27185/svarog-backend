@@ -1,7 +1,7 @@
 import "dotenv/config";
 import { Redis } from "ioredis";
 
-/** Jednoznačná URL nebo sada POSTGRES_* — žádné skryté výchozí heslo. ping */
+/** Jednoznačná URL nebo sada POSTGRES_* — žádné skryté výchozí heslo. ping ping */
 export function getDatabaseUrl(): string {
   const explicit = process.env.DATABASE_URL?.trim();
   if (explicit) return explicit;
